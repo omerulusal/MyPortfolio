@@ -1,0 +1,109 @@
+.tamamla {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1));
+}
+
+#satir {}
+
+#kart {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    transition: all .3s ease-in-out;
+}
+
+#kart:hover {
+    cursor: pointer;
+    background-color: #00000090;
+}
+
+#kart-ust {
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    border-radius: 10px 10px 0 0;
+    transition: all .3s ease-in-out;
+}
+
+#baslik {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gorsel {
+    position: relative;
+    width: 100%;
+    height: 8.5rem;
+    /* mediumdan itibaren 50vh olucak */
+    overflow: hidden;
+}
+
+.gorsel img {
+    width: 100%;
+    height: 110%;
+    border-radius: 10px 10px 0 0;
+    transition: all .3s ease-in-out;
+}
+
+#baslik h3 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.1rem;
+    text-shadow: 0 0 10px #000;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+#kart:hover h3 {
+    opacity: 1;
+}
+
+.card-body button {
+    width: 100%;
+}
+
+.card-body button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 860px) {
+    .gorsel {
+        height: 7rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .gorsel {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 430px) {
+    .gorsel {
+        height: 10vh;
+    }
+    #satir{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #kart {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .yan{
+        width: 50vw;
+        display: inline;
+    }
+}

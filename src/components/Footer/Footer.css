@@ -1,0 +1,71 @@
+footer {
+    background-color: black;
+    min-height: 250px;
+    color: white;
+}
+
+.my-icon {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-icon img {}
+
+.my-icon .my-text {}
+
+.footerTop {}
+
+.colz-icon {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.colz-icon .ic {
+    margin: 10px;
+    transition: .3s;
+}
+
+.colz-icon .ic:hover {
+    transform: scale(1.2);
+}
+
+.footerBody {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerBody a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .3s;
+
+}
+
+.footerBody a:hover {
+    background-color: brown;
+    color: white;
+}
+
+.telif {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}

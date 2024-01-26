@@ -1,0 +1,179 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.profile-parent {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.profile-details-name {
+    font-size: 24px;
+}
+
+.profile-details-role {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1 {
+    font-size: 32px;
+    font-family: cursive;
+    margin-right: -40px;
+}
+
+.primary-text {
+    color: white;
+    z-index: -1;
+}
+
+.highlighted-text {
+    color: darkorange;
+}
+
+.profile-role-tagline {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin: 5px 0 0 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.adim {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+}
+
+.profile-picture-background {
+    height: 92%;
+    width: 92%;
+    background-image: url("../../../public/images/my.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+.profile-picture-background:hover {
+    transform: scale(1.1);
+}
+
+.colz .colz-icon {
+    padding: 8px;
+    padding-left: 0px;
+    transition: all 1s ease-in;
+}
+
+.colz .colz-icon .ic:hover {
+    transform: scale(1.1);
+}
+
+.spinner {
+    background-image: linear-gradient(to right, rgb(216, 49, 91), rgb(255, 187, 48));
+    width: 1024px;
+    height: 850px;
+    top: 10%;
+    position: fixed;
+    z-index: -2;
+    animation: spinning82341 21s alternate-reverse infinite;
+    text-align: center;
+    border-radius: 50%;
+    filter: blur(1.4px);
+    box-shadow: 0px -5px 20px 0px rgb(216, 49, 91), 0px 5px 20px 0px rgb(13, 110, 253);
+}
+
+
+@keyframes spinning82341 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width:820px) {
+    .profile-picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+        border-radius: 50%;
+        height: 240px;
+        width: 240px;
+        margin: 0 0px 0 100px;
+    }
+}
+
+@media(max-width:430px) {
+    .profile-container {
+        min-height: 30vh;
+    }
+    .profile-details-name {
+        font-size: 18px;
+    }
+    .adim {
+        font-size: 1.5rem;
+    }
+    .primary-text{
+        margin-left: 2.5rem;
+    }
+    .profile-role-tagline {
+        margin-left: 2rem;
+    }
+    .profile-options{
+        margin-left: 2rem;
+    }
+    .profile-picture {
+        height: 200px;
+        width: 180px;
+        box-shadow: none;
+        margin-left: 1rem;
+    }
+    .highlighted-btn{
+        font-size: small;
+    }
+    .profile-picture-background {
+        height: 65%;
+        width: 85%;
+    }
+    .profile-picture-background:hover {
+        transform: scale(1);
+    }
+    .sil {
+        display: none;
+    }
+    .spinner {
+        background-image: none;
+        border: none;
+        z-index: -2;
+        animation: spinning82341 50s alternate-reverse infinite;
+        box-shadow:none;
+        position: absolute;
+        background-color: darkseagreen;
+        filter: blur(4px);
+    }
+}
